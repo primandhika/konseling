@@ -1,287 +1,514 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Konseling Online | IKIP Siliwangi</title>
 
     <!-- <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'> -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="carousel.css">
-</head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="carousel.css" />
+  </head>
 
-<body>
-
+  <body>
     <header>
-        <nav class="navbar navbar-dark navbar-expand-lg bd-dark fixed-top">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img src="img/logo.png" alt="Logo" width="30" class="d-inline-block align-text-top">&nbsp;
-                    <b>Konseling
-                        Online</b>
+      <nav class="navbar navbar-dark navbar-expand-lg bd-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              src="img/logo.png"
+              alt="Logo"
+              width="30"
+              class="d-inline-block align-text-top"
+            />&nbsp;
+            <b>Konseling Online</b>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNavAltMarkup"
+          >
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Beranda</a
+              >
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Konselor
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-link active" aria-current="page" href="#">Beranda</a>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Konselor
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Prestasi</a></li>
-                                <li><a class="dropdown-item" href="#">Kepribadian</a></li>
-                            </ul>
-                        </li>
-                        <a class="nav-link" href="#">Jadwal</a>
-                        <a class="nav-link" href="#">Artikel</a>
-                        <a class="nav-link" href="#">Tes</a>
-                        <a class="nav-link" href="#">Panduan</a>
-                        <a class="nav-link" href="#">Kontak</a>
-                    </div>
-                </div>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Prestasi</a></li>
+                  <li><a class="dropdown-item" href="#">Kepribadian</a></li>
+                </ul>
+              </li>
+              <a class="nav-link" href="#">Jadwal</a>
+              <a class="nav-link" href="#">Artikel</a>
+              <a class="nav-link" href="#">Tes</a>
+              <a class="nav-link" href="#">Panduan</a>
+              <a class="nav-link" href="#">Kontak</a>
             </div>
-        </nav>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <!-- JUMBOTRON -->
     <main>
-        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <svg
+              class="bd-placeholder-img"
+              width="100%"
+              height="100%"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+              preserveAspectRatio="xMidYMid slice"
+              focusable="false"
+            >
+              <rect width="100%" height="100%" fill="#e6d3f7" />
+            </svg>
+
+            <div class="container">
+              <div class="carousel-caption text-start text-dark">
+                <h1>Akses Mudah untuk Meningkatkan Kesehatan Mental Anda</h1>
+                <p>
+                  Jelajahi Layanan Konseling Online dan Temukan Dukungan yang
+                  Anda Butuhkan dari Kesejahteraan Pikiran dan Perasaan Anda.
+                </p>
+              </div>
             </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                        <rect width="100%" height="100%" fill="#e6d3f7" />
-                    </svg>
+          </div>
+          <div class="carousel-item">
+            <svg
+              class="bd-placeholder-img"
+              width="100%"
+              height="100%"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+              preserveAspectRatio="xMidYMid slice"
+              focusable="false"
+            >
+              <rect width="100%" height="100%" fill="#e6d3f7" />
+            </svg>
 
-                    <div class="container">
-                        <div class="carousel-caption text-start text-dark">
-                            <h1>Example headline.</h1>
-                            <p>Some representative placeholder content for the first slide of the carousel.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                        <rect width="100%" height="100%" fill="#e6d3f7" />
-                    </svg>
-
-                    <div class="container">
-                        <div class="carousel-caption text-dark">
-                            <h1>Another example headline.</h1>
-                            <p>Some representative placeholder content for the second slide of the carousel.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                        <rect width="100%" height="100%" fill="#e6d3f7" />
-                    </svg>
-
-                    <div class="container">
-                        <div class="carousel-caption text-end text-dark">
-                            <h1>One more for good measure.</h1>
-                            <p>Some representative placeholder content for the third slide of this carousel.</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="container">
+              <div class="carousel-caption text-dark">
+                <h1>Another example headline.</h1>
+                <p>
+                  Some representative placeholder content for the second slide
+                  of the carousel.
+                </p>
+              </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Sebelumnya</span>
+          </div>
+          <div class="carousel-item">
+            <svg
+              class="bd-placeholder-img"
+              width="100%"
+              height="100%"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+              preserveAspectRatio="xMidYMid slice"
+              focusable="false"
+            >
+              <rect width="100%" height="100%" fill="#e6d3f7" />
+            </svg>
+
+            <div class="container">
+              <div class="carousel-caption text-end text-dark">
+                <h1>One more for good measure.</h1>
+                <p>
+                  Some representative placeholder content for the third slide of
+                  this carousel.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Sebelumnya</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Berikutnya</span>
+        </button>
+      </div>
+
+      <!-- BERITA -->
+      <div class="container text-center">
+        <!-- JUDUL -->
+        <div class="row justify-content-center mb-5">
+          <h2>Berita</h2>
+        </div>
+
+        <div class="row">
+          <div class="card col-md-3 style=" style="width: 18rem">
+            <img
+              src="img/contoh.jpg"
+              class="card-img-top"
+              alt="img/contoh.jpg"
+              width="200px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          <div class="card col-md-3" style="width: 18rem">
+            <img
+              src="img/contoh.jpg"
+              class="card-img-top"
+              alt="img/contoh.jpg"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          <div class="card col-md-3" style="width: 18rem">
+            <img
+              src="img/contoh.jpg"
+              class="card-img-top"
+              alt="img/contoh.jpg"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          <div class="card col-md-3" style="width: 18rem">
+            <img
+              src="img/contoh.jpg"
+              class="card-img-top"
+              alt="img/contoh.jpg"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- LAINYA -->
+        <div class="d-grid gap-2">
+          <button type="button" class="btn btn-outline-secondary mt-2 block">
+            Lihat berita lainnya...
+          </button>
+        </div>
+      </div>
+      <div class="container mt-2 mb-2">&nbsp;</div>
+      <!-- SECTION LAINNYA -->
+      <div id="CTA">&nbsp;</div>
+      <div class="container-fluid ungu-muda mt-4">
+        <div class="row p-5">
+          <div class="col-md-8">
+            <h2>Kami siap mendengarkanmu...</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
+              inventore, amet iure recusandae, voluptate eius consectetur eum
+              numquam, error dicta neque sequi veniam incidunt. Eaque atque
+              velit assumenda exercitationem reprehenderit repudiandae nihil
+              laborum. Ipsam, hic dolorum sint accusantium sit cupiditate harum,
+              cumque incidunt blanditiis maiores enim adipisci repellat
+              distinctio officia illum quaerat ullam, magni tenetur molestiae
+              ipsum. Alias optio ex eligendi numquam assumenda quaerat, non
+              sunt, soluta animi perspiciatis, similique earum ad. Dicta
+              distinctio nihil non odit dolore nostrum.
+            </p>
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              Yuk cerita sama kami!
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Berikutnya</span>
-            </button>
+          </div>
         </div>
-
-        <!-- BERITA -->
-        <div class="container text-center">
-            <!-- JUDUL -->
-            <div class="row justify-content-center mb-5">
-                <h2>Berita</h2>
-            </div>
-
-            <div class="row">
-                <div class="card col-md-3 style=" style="width: 18rem;">
-                    <img src="img/contoh.jpg" class="card-img-top" alt="img/contoh.jpg" width="200px">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-                <div class="card col-md-3" style="width: 18rem;">
-                    <img src="img/contoh.jpg" class="card-img-top" alt="img/contoh.jpg">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-                <div class="card col-md-3" style="width: 18rem;">
-                    <img src="img/contoh.jpg" class="card-img-top" alt="img/contoh.jpg">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-                <div class="card col-md-3" style="width: 18rem;">
-                    <img src="img/contoh.jpg" class="card-img-top" alt="img/contoh.jpg">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- LAINYA -->
-            <div class="d-grid gap-2">
-                <button type="button" class="btn btn-outline-secondary mt-2 block"> Lihat berita lainnya...</button>
-            </div>
-        </div>
-        <div class="container mt-2 mb-2">
-            &nbsp;
-        </div>
-        <!-- SECTION LAINNYA -->
-        <div id="CTA">
-            &nbsp;
-        </div>
-        <div class="container-fluid ungu-muda mt-4">
-            <div class="row p-5">
-                <div class="col-md-8">
-                    <h2>Kami siap mendengarkanmu...</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi inventore, amet iure recusandae, voluptate eius consectetur eum numquam, error dicta neque sequi veniam incidunt. Eaque atque velit assumenda exercitationem reprehenderit
-                        repudiandae nihil laborum. Ipsam, hic dolorum sint accusantium sit cupiditate harum, cumque incidunt blanditiis maiores enim adipisci repellat distinctio officia illum quaerat ullam, magni tenetur molestiae ipsum. Alias optio ex
-                        eligendi numquam assumenda quaerat, non sunt, soluta animi perspiciatis, similique earum ad. Dicta distinctio nihil non odit dolore nostrum.
-                    </p>
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Yuk cerita sama kami!</button>
-                </div>
-            </div>
-        </div>
+      </div>
     </main>
 
     <footer class="text-muted py-5">
-        <div class="container">
-            <p class="float-end mb-1">
-                <a href="#">Kembali ke Atas</a>
-            </p>
-            <p class="mb-1">Layanan Konseling Online IKIP Siliwangi &copy; 2023 - Hak Cipta Dilindungi | Program Studi Bimbingan dan Konseling
-            </p>
-            <p class="mb-0">Dikembangkan oleh
-                <a href="https://it.ikipsiliwangi.ac.id/">Bagian Pengembangan IT IKIP Siliwangi</a>
-            </p>
-        </div>
+      <div class="container">
+        <p class="float-end mb-1">
+          <a href="#">Kembali ke Atas</a>
+        </p>
+        <p class="mb-1">
+          Layanan Konseling Online IKIP Siliwangi &copy; 2023 - Hak Cipta
+          Dilindungi | Program Studi Bimbingan dan Konseling
+        </p>
+        <p class="mb-0">
+          Dikembangkan oleh
+          <a href="https://it.ikipsiliwangi.ac.id/"
+            >Bagian Pengembangan IT IKIP Siliwangi</a
+          >
+        </p>
+      </div>
     </footer>
 
-
     <!-- MODAL -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header ungu-tua text-light">
-                    <h5 class="modal-title" id="exampleModalLabel">Ceritain detailnya!</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header ungu-tua text-light">
+            <h5 class="modal-title" id="exampleModalLabel">
+              Ceritain detailnya!
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body p-3">
+            <form>
+              <div class="mb-3">
+                <label for="recipient-name" class="col-form-label">Nama:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="recipient-name"
+                  placeholder="Nama atau inisialmu"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="recipient-name" class="col-form-label"
+                  >Jenis Kelamin:</label
+                >
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="flexRadioDefault"
+                    id="flexRadioDefault1"
+                  />
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    Laki-laki
+                  </label>
                 </div>
-                <div class="modal-body p-3">
-                    <form>
-                        <div class="mb-3">
-                            <label for="recipient-name" class="col-form-label">Nama:</label>
-                            <input type="text" class="form-control" id="recipient-name" placeholder="Nama atau inisialmu">
-                        </div>
-                        <div class="mb-3">
-                            <label for="recipient-name" class="col-form-label">Jenis Kelamin:</label>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                <label class="form-check-label" for="flexRadioDefault1">
-                                    Laki-laki
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                                <label class="form-check-label" for="flexRadioDefault2">
-                                    Perempuan
-                                </label>
-                            </div>
-
-                        </div>
-                        <div class="mb-3">
-                            <label for="recipient-name" class="col-form-label">Usia:</label>
-                            <input type="text" class="form-control" id="recipient-name" placeholder="Tulis usiamu">
-                        </div>
-                        <div class="mb-3">
-                            <label for="message-text" class="col-form-label">Permasalahan:</label>
-                            <div class="input-group mb-3">
-                                <select class="form-select" id="inputGroupSelect01">
-                                    <option selected disabled>-pilih permasalahanmu-</option>
-                                    <option value="1">Prestasi</option>
-                                    <option value="2">Motivasi</option>
-                                    <option value="3">Pribadi</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="mb-3">
-                            <label for="message-text" class="col-form-label">Deskripsi:</label>
-                            <textarea class="form-control" id="message-text" rows="4" placeholder="Ungkapkan dengan ringkas dan jelas..."></textarea>
-                        </div>
-                        <hr>
-                        <h6 class="text-muted">Izinkan kami menghubungimu nanti ya!</h6>
-                        <div class="mt-2">
-                            <div class="input-group mb-1">
-                                <span class="input-group-text" id="basic-addon1"><svg xmlns="http://www.w3.org/2000/svg"
-                                        width="16" height="16" fill="currentColor" class="bi bi-telephone"
-                                        viewBox="0 0 16 16">
-                                        <path
-                                            d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="flexRadioDefault"
+                    id="flexRadioDefault2"
+                    checked
+                  />
+                  <label class="form-check-label" for="flexRadioDefault2">
+                    Perempuan
+                  </label>
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="recipient-name" class="col-form-label">Usia:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="recipient-name"
+                  placeholder="Tulis usiamu"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="message-text" class="col-form-label"
+                  >Permasalahan:</label
+                >
+                <div class="input-group mb-3">
+                  <select class="form-select" id="inputGroupSelect01">
+                    <option selected disabled>-pilih permasalahanmu-</option>
+                    <option value="1">Prestasi</option>
+                    <option value="2">Motivasi</option>
+                    <option value="3">Pribadi</option>
+                  </select>
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="message-text" class="col-form-label"
+                  >Deskripsi:</label
+                >
+                <textarea
+                  class="form-control"
+                  id="message-text"
+                  rows="4"
+                  placeholder="Ungkapkan dengan ringkas dan jelas..."
+                ></textarea>
+              </div>
+              <hr />
+              <h6 class="text-muted">Izinkan kami menghubungimu nanti ya!</h6>
+              <div class="mt-2">
+                <div class="input-group mb-1">
+                  <span class="input-group-text" id="basic-addon1"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-telephone"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678
                     0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678
-                    0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
-                                    </svg></span>
-                                <input type="text" class="form-control" placeholder="No. telepon (dengan WA jika ada)" aria-label="Telephone" aria-describedby="basic-addon1">
-                            </div>
-                            <div class="input-group">
-                                <span class="input-group-text" id="basic-addon1"><svg xmlns="http://www.w3.org/2000/svg"
-                                        width="16" height="16" fill="currentColor" class="bi bi-envelope"
-                                        viewBox="0 0 16 16">
-                                        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64
-                    3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
-                                    </svg></span>
-                                <input type="text" class="form-control" placeholder="Alamat surel aktif (email)" aria-label="Telephone" aria-describedby="basic-addon1">
-                            </div>
-                        </div>
-                    </form>
+                    0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
+                      /></svg
+                  ></span>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="No. telepon (dengan WA jika ada)"
+                    aria-label="Telephone"
+                    aria-describedby="basic-addon1"
+                  />
                 </div>
-                <hr>
-                <div class="container mb-3">
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label" for="flexCheckDefault" aria-required="true">
-                            Centang jika datamu sudah benar dan kamu setuju untuk kami tangani
-                        </label>
-                    </div>
+                <div class="input-group">
+                  <span class="input-group-text" id="basic-addon1"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-envelope"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64
+                    3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"
+                      /></svg
+                  ></span>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Alamat surel aktif (email)"
+                    aria-label="Telephone"
+                    aria-describedby="basic-addon1"
+                  />
                 </div>
-
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Keluar</button>
-                    <button type="button" class="btn btn-success">Kirim</button>
-                </div>
+              </div>
+            </form>
+          </div>
+          <hr />
+          <div class="container mb-3">
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="flexCheckDefault"
+              />
+              <label
+                class="form-check-label"
+                for="flexCheckDefault"
+                aria-required="true"
+              >
+                Centang jika datamu sudah benar dan kamu setuju untuk kami
+                tangani
+              </label>
             </div>
+          </div>
+
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Keluar
+            </button>
+            <button type="button" class="btn btn-success">Kirim</button>
+          </div>
         </div>
+      </div>
     </div>
 
     <!-- JS -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
