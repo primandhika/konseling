@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Konseling Online | IKIP Siliwangi</title>
 
-    <!-- <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'> -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -19,15 +18,14 @@
   <body>
     <header>
       <nav class="navbar navbar-dark navbar-expand-lg bd-dark fixed-top">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
+        <div class="container-fluid mx-2">
+          <a class="navbar-brand" href="/">
             <img
               src="img/logo.png"
               alt="Logo"
-              width="30"
+              width="32"
               class="d-inline-block align-text-top"
-            />&nbsp;
-            <b>Konseling Online</b>
+            />&nbsp; Konseling Online
           </a>
           <button
             class="navbar-toggler"
@@ -41,11 +39,11 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div
-            class="collapse navbar-collapse justify-content-end"
+            class="collapse navbar-collapse justify-content-end p-2"
             id="navbarNavAltMarkup"
           >
             <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="#"
+              <a class="nav-link active" aria-current="page" href="/"
                 >Beranda</a
               >
               <li class="nav-item dropdown">
@@ -57,18 +55,45 @@
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  Konselor
+                  Profil Konselor
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Prestasi</a></li>
+                  <li>
+                    <a class="dropdown-item" href="kons-pres.html">Prestasi</a>
+                  </li>
                   <li><a class="dropdown-item" href="#">Kepribadian</a></li>
                 </ul>
               </li>
-              <a class="nav-link" href="#">Jadwal</a>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Layanan
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="/jadwal.html">Jadwal</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="404.html">Tes Kesehatan Mental</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Tes Kesehatan Mental</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Panduan</a>
+                  </li>
+                </ul>
+              </li>
               <a class="nav-link" href="#">Artikel</a>
-              <a class="nav-link" href="#">Tes</a>
-              <a class="nav-link" href="#">Panduan</a>
-              <a class="nav-link" href="#">Kontak</a>
+              <a class="nav-link" href="404.html">Kontak</a>
+              <a class="nav-link" style="background-color: rgb(128, 46, 128); padding: 10px; border-radius: 5px;" href="konseling.html">> Sesi Konseling</a>
             </div>
           </div>
         </div>
@@ -114,16 +139,25 @@
               <rect width="100%" height="100%" fill="#e6d3f7" />
             </svg>
 
+            <!-- SLIDE 1 -->
             <div class="container">
               <div class="carousel-caption text-start text-dark">
-                <h1>Akses Mudah untuk Meningkatkan Kesehatan Mental Anda</h1>
+                <h1>Selamat Datang di Layanan Konseling IKIP Siliwangi</h1>
                 <p>
-                  Jelajahi Layanan Konseling Online dan Temukan Dukungan yang
-                  Anda Butuhkan dari Kesejahteraan Pikiran dan Perasaan Anda.
+                  Kami siap mendengarkan dan membantu Anda menemukan solusi atas masalah yang Anda hadapi. Dengan pendekatan yang hangat dan profesional, kami akan bekerja bersama kamu untuk mencapai kesejahteraan mental dan emosional.
                 </p>
+                <button
+                  type="button"
+                  class="btn btn-lg btn-outline-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModalToggle"
+                >
+                  Daftar Konseling
+                </button>
               </div>
             </div>
           </div>
+
           <div class="carousel-item">
             <svg
               class="bd-placeholder-img"
@@ -139,14 +173,14 @@
 
             <div class="container">
               <div class="carousel-caption text-dark">
-                <h1>Another example headline.</h1>
+                <h1>Cari <em>Support System</em> buat kamu!</h1>
                 <p>
-                  Some representative placeholder content for the second slide
-                  of the carousel.
+                  Di sini, Kamu tidak sendirian. Tim konselor kami sudah berpengalaman jadi teman curhatmu dan mendengarkan ceritamu. Bersama, kita akan menjelajahi perasaan, pemikiran, dan pengalaman Anda untuk mencapai pemahaman dan perubahan yang positif.
                 </p>
               </div>
             </div>
           </div>
+
           <div class="carousel-item">
             <svg
               class="bd-placeholder-img"
@@ -162,10 +196,9 @@
 
             <div class="container">
               <div class="carousel-caption text-end text-dark">
-                <h1>One more for good measure.</h1>
+                <h1>Berani Mulai Perubahan untuk Hidup yang Lebih Baik</h1>
                 <p>
-                  Some representative placeholder content for the third slide of
-                  this carousel.
+                  Tidak ada permasalahan terlalu kecil atau terlalu besar untuk dibicarakan. Kami hadir untuk membantu Anda mengatasi kesulitan, mengelola stres, memperkuat hubungan, dan meningkatkan kualitas hidup Anda secara keseluruhan. Percayakan pada kami untuk menjadi mitra perjalanan Anda menuju kebahagiaan dan kesejahteraan.
                 </p>
               </div>
             </div>
@@ -191,73 +224,103 @@
         </button>
       </div>
 
+
+      <!-- QUICK BUTTON -->
+      <div class="bg-light py-4 mb-4 p-2 ">
+        <div class="container text-center">
+          <div class="row justify-content-center mb-3">
+            <h2>Mulai Cepat</h2>
+            <small>Jika kamu sudah pernah mendaftar, kamu dapat memulai langsung sesi konselingmu di sini secara langsung. Silakan masukan nomor tiketmu dan klik tombol mulai.</small>
+          </div>
+
+          <div class="input-group input-group-sm mb-3">
+            <span class="input-group-text" id="inputGroup-sizing-sm">No. Tiket</span>
+            <input type="text" placeholder="Masukkan nomor tiket konselingmu..." class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+          </div>
+
+          <a href="konseling.html" class="btn btn-md btn-primary">Mulai</a>
+          
+        </div>
+
+      </div>
+
+
+
       <!-- BERITA -->
       <div class="container text-center">
         <!-- JUDUL -->
-        <div class="row justify-content-center mb-5">
+        <div class="row justify-content-center mb-4">
           <h2>Berita</h2>
         </div>
 
-        <div class="row">
-          <div class="card col-md-3 style=" style="width: 18rem">
+        <div class="row justify-content-center mb-3">
+          <div class="card col-md-3 p-2 m-2" style="width: 18rem">
             <img
               src="img/contoh.jpg"
               class="card-img-top"
               alt="img/contoh.jpg"
               width="200px"
             />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
+            <div class="card-body mt-2">
+              <h5 class="card-title">Judul Berita</h5>
               <p class="card-text">
-                Some quick example text to build on the card title and make up
+                Some quick example text to build on the Judul Berita and make up
                 the bulk of the card's content.
               </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <a href="#" class="btn btn-sm btn-outline-primary"
+                >Baca selengkapnya</a
+              >
             </div>
           </div>
-          <div class="card col-md-3" style="width: 18rem">
+          <div class="card col-md-3 p-2 m-2" style="width: 18rem">
+            <img
+              src="img/contoh.jpg"
+              class="card-img-top"
+              alt="img/contoh.jpg"
+            />
+            <div class="card-body mt-2">
+              <h5 class="card-title">Judul Berita</h5>
+              <p class="card-text">
+                Some quick example text to build on the Judul Berita and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-sm btn-outline-primary"
+                >Baca selengkapnya</a
+              >
+            </div>
+          </div>
+          <div class="card col-md-3 p-2 m-2" style="width: 18rem">
+            <img
+              src="img/contoh.jpg"
+              class="card-img-top"
+              alt="img/contoh.jpg"
+            />
+            <div class="card-body mt-2">
+              <h5 class="card-title">Judul Berita</h5>
+              <p class="card-text">
+                Some quick example text to build on the Judul Berita and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-sm btn-outline-primary"
+                >Baca selengkapnya</a
+              >
+            </div>
+          </div>
+          <div class="card col-md-3 p-2 m-2" style="width: 18rem">
             <img
               src="img/contoh.jpg"
               class="card-img-top"
               alt="img/contoh.jpg"
             />
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
+              <h5 class="card-title">Judul Berita</h5>
               <p class="card-text">
-                Some quick example text to build on the card title and make up
+                Some quick example text to build on the Judul Berita and make up
                 the bulk of the card's content.
               </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-          <div class="card col-md-3" style="width: 18rem">
-            <img
-              src="img/contoh.jpg"
-              class="card-img-top"
-              alt="img/contoh.jpg"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-          <div class="card col-md-3" style="width: 18rem">
-            <img
-              src="img/contoh.jpg"
-              class="card-img-top"
-              alt="img/contoh.jpg"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <a href="#" class="btn btn-sm btn-outline-primary"
+                >Go somewhere</a
+              >
             </div>
           </div>
         </div>
@@ -270,29 +333,24 @@
         </div>
       </div>
       <div class="container mt-2 mb-2">&nbsp;</div>
+
       <!-- SECTION LAINNYA -->
       <div id="CTA">&nbsp;</div>
       <div class="container-fluid ungu-muda mt-4">
-        <div class="row p-5">
+        <div class="row p-5 justify-content-center">
           <div class="col-md-8">
+            <img src="img/icon/chat-svgrepo-com.svg" width="50px" alt="">
             <h2>Kami siap mendengarkanmu...</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
-              inventore, amet iure recusandae, voluptate eius consectetur eum
-              numquam, error dicta neque sequi veniam incidunt. Eaque atque
-              velit assumenda exercitationem reprehenderit repudiandae nihil
-              laborum. Ipsam, hic dolorum sint accusantium sit cupiditate harum,
-              cumque incidunt blanditiis maiores enim adipisci repellat
-              distinctio officia illum quaerat ullam, magni tenetur molestiae
-              ipsum. Alias optio ex eligendi numquam assumenda quaerat, non
-              sunt, soluta animi perspiciatis, similique earum ad. Dicta
-              distinctio nihil non odit dolore nostrum.
+              Di sini, tempatnya curhat bebas tanpa ada yang ngjudge. Mulai
+              cerita masalahmu sekarang juga! Klik tombol di bawah buat mulai
+              ngobrol sama konselor yang siap dengerin.
             </p>
             <button
               type="button"
               class="btn btn-primary"
               data-bs-toggle="modal"
-              data-bs-target="#exampleModal"
+              data-bs-target="#exampleModalToggle"
             >
               Yuk cerita sama kami!
             </button>
@@ -301,33 +359,27 @@
       </div>
     </main>
 
-    <footer class="text-muted py-5">
+    <footer class="text-muted p-3">
       <div class="container">
         <p class="float-end mb-1">
-          <a href="#">Kembali ke Atas</a>
+          <a class="btn btn-outline-primary" href="#">^</a>
         </p>
-        <p class="mb-1">
+        <small class="mb-1">
           Layanan Konseling Online IKIP Siliwangi &copy; 2023 - Hak Cipta
           Dilindungi | Program Studi Bimbingan dan Konseling
-        </p>
-        <p class="mb-0">
+        </small> <br>
+        <small class="mb-0">
           Dikembangkan oleh
-          <a href="https://it.ikipsiliwangi.ac.id/"
-            >Bagian Pengembangan IT IKIP Siliwangi</a
-          >
-        </p>
+          <a href="https://it.ikipsiliwangi.ac.id/" style="text-decoration: none;">Bagian Pengembangan IT IKIP Siliwangi</a> <br><hr> <a class="mb-3"  href="login.html" style="text-decoration: none;">Login Konselor</a> | <a class="mb-3" href="kebijakan.html" style="text-decoration: none;">Kebijakan Layanan</a> 
+        </small>
       </div>
     </footer>
 
     <!-- MODAL -->
-    <div
-      class="modal fade"
-      id="exampleModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
+
+    <!-- isi biodata -->
+    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header ungu-tua text-light">
             <h5 class="modal-title" id="exampleModalLabel">
@@ -340,7 +392,7 @@
               aria-label="Close"
             ></button>
           </div>
-          <div class="modal-body p-3">
+          <div class="modal-body px-5">
             <form>
               <div class="mb-3">
                 <label for="recipient-name" class="col-form-label">Nama:</label>
@@ -382,7 +434,9 @@
               <div class="mb-3">
                 <label for="recipient-name" class="col-form-label">Usia:</label>
                 <input
-                  type="text"
+                  type="number"
+                  min="11"
+                  max="100"
                   class="form-control"
                   id="recipient-name"
                   placeholder="Tulis usiamu"
@@ -394,7 +448,7 @@
                 >
                 <div class="input-group mb-3">
                   <select class="form-select" id="inputGroupSelect01">
-                    <option selected disabled>-pilih permasalahanmu-</option>
+                    <option selected disabled>--pilih permasalahanmu--</option>
                     <option value="1">Prestasi</option>
                     <option value="2">Motivasi</option>
                     <option value="3">Pribadi</option>
@@ -429,8 +483,7 @@
                         d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678
                     0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678
                     0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
-                      /></svg
-                  ></span>
+                      /></svg></span>
                   <input
                     type="text"
                     class="form-control"
@@ -452,8 +505,7 @@
                       <path
                         d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64
                     3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"
-                      /></svg
-                  ></span>
+                      /></svg></span>
                   <input
                     type="text"
                     class="form-control"
@@ -464,37 +516,89 @@
                 </div>
               </div>
             </form>
-          </div>
-          <hr />
-          <div class="container mb-3">
-            <div class="form-check">
-              <input
-                class="form-check-input"
-                type="checkbox"
-                value=""
-                id="flexCheckDefault"
-              />
-              <label
-                class="form-check-label"
-                for="flexCheckDefault"
-                aria-required="true"
-              >
-                Centang jika datamu sudah benar dan kamu setuju untuk kami
-                tangani
-              </label>
+            <hr />
+            <div class="container mb-3">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label
+                  class="form-check-label"
+                  for="flexCheckDefault"
+                  aria-required="true"
+                >
+                  Centang jika datamu sudah benar dan kamu setuju dengan
+                  <a href="/kebijakan.html" target="_blank"
+                    >persyaratan layanan kami.</a
+                  >
+                </label>
+              </div>
             </div>
-          </div>
 
           <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Keluar
-            </button>
-            <button type="button" class="btn btn-success">Kirim</button>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Keluar
+              </button>
+              <button type="button" class="btn btn-success" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal">Kirim</button>
+            </div>
+  
+            <div class="container mb-3">
+              <small>
+                Sudah pernah mendaftar? 
+                <a href="/konseling.html" target="_blank"
+                  >masuk ke Sesi Konselihng</a>
+              </small>
+              </div>
           </div>
+        </div>
+      </div>
+    </div>
+
+
+  <!-- konfirmasi sudah -->
+    <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header hijau-ikip">
+            <h5 class="modal-title" id="exampleModalToggleLabel2"><strong>Pendaftaran konseling berhasil!</strong></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <span>No. Tiket Konseling Anda:</span>  
+            <div class="alert alert-success" role="alert">
+              <strong>J9HSID2398JSDYUF902</strong>
+            </div>
+            <div class="alert alert-info" role="alert">
+              <small>Kami juga mengirimkan nomor tiket ini ke emailmu di: <strong>contoh@user.com</strong></small>
+            </div>
+
+            <small class="mt-2">Kamu dapat melanjutkan sesi konseling berikutnya dengan memasukan nomor tiket tersebut pada laman awal atau laman konseling. Atau kamu dapat melihat sesi konseling kamu melalui tombol lanjutkan di bawah.</small>
+            <br><br>
+
+          </div>
+          <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-sm btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Keluar
+              </button>
+            <a href="konseling.html" class="btn btn-sm btn-primary">Lanjutkan ke sesi konseling >>></a>
+            <!-- <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" data-bs-dismiss="modal">Back to first</button> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+
         </div>
       </div>
     </div>

@@ -1,0 +1,49 @@
+/* Custom CSS */
+
+/* Center the cards */
+.card {
+  text-align: center;
+}
+
+.card-body {
+  text-align: center;
+}
+
+.card-body-left {
+  text-align: left;
+  padding: 20px;
+}
+
+/* Style the card titles */
+.card-title {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Style the card text */
+.card-text {
+  font-size: 1.1rem;
+}
+
+/* Add some padding to the top */
+.container {
+  padding-top: 20px;
+}
+
+.doctor-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+.doctor-img-2 {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+}

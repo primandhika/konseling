@@ -1,21 +1,38 @@
+/* Memuat font Poppins dari Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+/* Menggunakan font Poppins untuk semua elemen */
+* {
+  font-family: "Poppins", sans-serif;
+}
+
 #myCarousel {
-    height: 720px;
-    background-color: #e6d3f7;
+  height: 570px;
+  background-color: #e6d3f7;
 }
 
 #cta {
-    padding-top: 100px;
+  padding-top: 100px;
 }
 
 .navbar {
-    background-color: #9b51E0;
-    color: white;
+  background-color: #9b51e0;
+  color: white;
 }
 
 .ungu-muda {
-    background-color: #eee3f8;
+  background-color: #eee3f8;
 }
 
 .ungu-tua {
-    background-color: #9b51E0;
+  background-color: #9b51e0;
+}
+
+.hijau-ikip {
+  background-color: seagreen;
+  color: white;
+}
+
+.navbar {
+  --bs-navbar-nav-link-padding-x: 1rem;
 }
