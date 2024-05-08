@@ -36,3 +36,7 @@
 .navbar {
   --bs-navbar-nav-link-padding-x: 1rem;
 }
+
+a {
+  text-decoration: none;
+}
