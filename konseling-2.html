@@ -315,19 +315,25 @@
         </div>
 
         <div class="d-flex text-muted pt-3">
-          <img
-            src="img/contoh-konselor.png"
+          <svg
+            class="bd-placeholder-img flex-shrink-0 me-2 rounded"
             width="32"
             height="32"
-            alt=""
-            class="bd-placeholder-img flex-shrink-0 me-2 rounded"
-          />
+            xmlns="http://www.w3.org/2000/svg"
+            role="img"
+            aria-label="Placeholder: 32x32"
+            preserveAspectRatio="xMidYMid slice"
+            focusable="false"
+          >
+            <rect width="100%" height="100%" fill="#007bff" />
+            <text x="50%" y="50%" fill="#007bff" dy=".3em">32x32</text>
+          </svg>
 
           <div class="pb-3 mb-0 small lh-sm border-bottom w-100">
             <div class="d-flex justify-content-between">
               <span>
                 <strong class="text-gray-dark"
-                  >dr. Hadiwijaya Kornelius, M.Si.</strong
+                  >Heru Arianto</strong
                 >
               </span>
               <span>
@@ -360,8 +366,18 @@
             >Tulis catatan mengenai sesi konseling ini...</label
           >
         </div>
+        <div class="alert alert-success alert-dismissible fade show mt-2" role="alert">
+          <small><strong>Sip!</strong> Catatan berhasil disimpan.</small>
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+        <div class="alert alert-danger alert-dismissible fade show mt-2" role="alert">
+          <small><strong>Maaf!</strong> Catatan gagal disimpan. Silakan coba lagi.</small>
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
         <small class="d-block text-end mt-3 mb-2">
-          <a class="btn btn-md btn-success" href="#">Simpan catatan</a>
+          <button type="button" class="btn btn-primary">
+            Simpan catatan
+          </button>
         </small>
       </div>
       </div>
@@ -371,7 +387,7 @@
           <a class="btn btn-sm btn-warning" href="index.html"
             >Keluar dari laman sesi ini</a
           >
-          <a class="btn btn-sm btn-danger" href="logout.html">Akhiri Sesi Konseling</a>
+          <button class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">Akhiri Sesi Konseling</button>
         </small>
       </div>
     </main>
@@ -394,12 +410,37 @@
       </p>
     </div>
 
-    <script
-      src="/docs/5.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
+<!-- MODAL -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Konfirmasi</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Anda akan mengakhiri sesi konseling ini. Apakah Anda yakin?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+        <a type="button" class="btn btn-primary" href="logout.html">Lanjutkan</a>
+      </div>
+    </div>
+  </div>
+</div>
 
-    <script src="offcanvas.js"></script>
+
+
+<!-- SCRIPT -->
+<script
+src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+crossorigin="anonymous"
+></script>
+<script
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+crossorigin="anonymous"
+></script>
   </body>
 </html>
